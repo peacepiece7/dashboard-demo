@@ -1,0 +1,20 @@
+@function flexFn($str: center) {
+    @if ($str == center) {
+        @return center;
+    }
+    @if ($str == "sb") {
+        @return space-between;
+    }
+    @if ($str == end) {
+        @return flex-end;
+    }
+    @if ($str == start) {
+        @return flex-start;
+    }
+}
+
+@mixin flex($j: center, $a: center) {
+    display: flex;
+    justify-content: flexFn($j);
+    align-items: flexFn($a);
+}

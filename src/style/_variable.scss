@@ -1,0 +1,63 @@
+$white: #fff !default;
+$black: #000 !default;
+
+$border-width: 1px !default;
+$border-color: #ddd !default;
+
+$primary: #197ffa;
+$subTransparency: #f1f8ff;
+$subShade: #135fbb;
+
+$uiFooter: #111;
+$uiIcon: #333;
+$uiTooltip: #424652;
+$uiInnerBtn: #97a0b1;
+$uiLine: #d6dce5;
+$uiActive: #f1f8ff;
+$uiDisabled: #ccc;
+
+$lineTop: #111;
+$lineMiddle: #e8eff4;
+$lineBottom: #d6dce5;
+
+$bg1: #283142;
+$bg2: #f5f8fb;
+$bg3: #f9f9f9;
+$bg4: #fff;
+
+$error: #eb3f54;
+
+$fontSpoqa: "Spoqa Han Sans Neo", sans-serif;
+$fontRoboto: "Roboto", sans-serif;
+
+$fontColor1: #111;
+$fontColor2: #333;
+$fontColor3: #767676;
+$fontColor4: #999;
+$fontColor5: #197ffa;
+
+@mixin fontHeadline {
+    font-size: 23px;
+    font-weight: 500;
+    color: $fontColor1;
+}
+@mixin fontSubtitle {
+    font-size: 18px;
+    font-weight: 500;
+}
+@mixin fontBody15 {
+    font-size: 15px;
+    line-height: 1.53;
+}
+@mixin fontBody14 {
+    font-size: 14px;
+    line-height: 1.57;
+}
+@mixin fontBody13 {
+    font-size: 13px;
+    line-height: 1.62;
+}
+@mixin fontGNB {
+    font-size: 14px;
+    line-height: 1.5;
+}

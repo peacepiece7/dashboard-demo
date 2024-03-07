@@ -1,0 +1,20 @@
+$spacing: (
+    "pr": "padding-right",
+    "pl": "padding-left",
+    "pb": "padding-bottom",
+    "pt": "padding-top",
+    "mt": "margin-top",
+    "mr": "margin-right",
+    "mb": "margin-bottom",
+    "ml": "margin-left"
+);
+
+@for $i from 0 through 50 {
+    @if ($i % 5 == 0) {
+        @each $key, $value in $spacing {
+            .#{$key}-#{$i} {
+                #{$value}: #{$i}px !important;
+            }
+        }
+    }
+}

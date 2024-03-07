@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'icon-font';
+  font-style: normal;
+  font-weight: 400;
+  src: url("icon-font.eot?08c3b8ebcb71ce9b258930d23c658d02?#iefix") format("embedded-opentype"),
+url("icon-font.woff2?08c3b8ebcb71ce9b258930d23c658d02") format("woff2"),
+url("icon-font.woff?08c3b8ebcb71ce9b258930d23c658d02") format("woff");
+}
+
+.icon-font, .ic-icons {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.ic-icons {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  fill: currentColor;
+}
+
+.icon-font {
+  font-family: 'icon-font';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.ic-ic_add:before { content: "\f101"; }
+.ic-ic_arrow:before { content: "\f102"; }
+.ic-ic_calendar:before { content: "\f103"; }
+.ic-ic_close:before { content: "\f104"; }
+.ic-ic_copy:before { content: "\f105"; }
+.ic-ic_delete:before { content: "\f106"; }
+.ic-ic_double_arrow:before { content: "\f107"; }
+.ic-ic_download:before { content: "\f108"; }
+.ic-ic_dropdown:before { content: "\f109"; }
+.ic-ic_global:before { content: "\f10a"; }
+.ic-ic_input_time:before { content: "\f10b"; }
+.ic-ic_lock:before { content: "\f10c"; }
+.ic-ic_navi_home:before { content: "\f10d"; }
+.ic-ic_pencil:before { content: "\f10e"; }
+.ic-ic_plus_w:before { content: "\f10f"; }
+.ic-ic_reply:before { content: "\f110"; }
+.ic-ic_star:before { content: "\f111"; }
+.ic-ic_time:before { content: "\f112"; }
+.ic-ic_triangle:before { content: "\f113"; }

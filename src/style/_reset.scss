@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Spoqa, sans-serif;
+    &:disabled {
+        cursor: default;
+    }
+}
+
+html {
+    font-size: 14px;
+    font-family: Spoqa, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    font-family: Spoqa, sans-serif;
+    line-height: 1;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+input {
+    border: none;
+
+    &:active {
+        border: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid 4px;
+    resize: none;
+    &:focus {
+        outline: none;
+    }
+}
+table {
+    border-collapse: collapse;
+}
+
+em {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    height: 6px;
+    background: rgba(51, 51, 51, 0.2);
+    border: 4px solid $white;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(51, 51, 51, 0.3);
+}
+
+// 모달에서의 dropdown과 datepicker는 modal보다 큰 z-index를 가진다.
+body.has-modal {
+    .select-opt-animation-guard,
+    .dp-group {
+        z-index: 41 !important;
+    }
+}

@@ -1,0 +1,13 @@
+@function responseFn($media) {
+  @each $key, $value in $grid-breakpoints {
+    @if ($media == $key) {
+      @return $value;
+    }
+  }
+}
+
+@mixin response($media: xxl) {
+  @media screen and (max-width: responseFn($media)) {
+    @content;
+  }
+}

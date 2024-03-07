@@ -1,0 +1,23 @@
+$sizes: () !default;
+$sizes: map-merge(
+    (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%
+    ),
+    $sizes
+);
+
+// h-*, w-*, mh-*, mw-*
+@each $prop, $abbrev in (width: w, height: h) {
+    @each $size, $length in $sizes {
+        .#{$abbrev}-#{$size} {
+            #{$prop}: $length !important;
+        }
+
+        .m#{$abbrev}-#{$size} {
+            max-#{$prop}: $length !important;
+        }
+    }
+}
