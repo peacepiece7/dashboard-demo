@@ -1,8 +1,6 @@
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
-    publicPath: "/support",
     devServer: {
-
         open: true,
         port: 8080
     },
